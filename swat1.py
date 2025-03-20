@@ -119,7 +119,7 @@ with open('c:\\Users\\User\\CPS5\\tank_level.csv', mode='w', newline='') as file
     writer.writerow(["Time", "Level", "Indicator", "Valve", "Pump"])
 
     # Simulate tank operation
-    for time in range(1000):  # Simulate 50 minutes of operation
+    for time in range(100000):  # Simulate 50 minutes of operation
         tank.fill()
         tank.drain()
         tank.update_valve_state()
